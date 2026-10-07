@@ -1,15 +1,25 @@
-css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    width: 700px;
+    margin: 20px auto;
+    border: 3px solid steelblue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Bold links layout */
 a {
     font-weight: bold;
 }
 
-h1 {
-    font-size: 2.2rem; 
+header {
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    border-bottom: 3px solid steelblue;
+    padding: 20px;
 }
 
 header img {
@@ -23,10 +33,33 @@ header h1 {
     font-style: italic;
     font-size: 2.5rem;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 header h2 {
     font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+section {
+    flex: 2;
+}
+
+h1 {
+    font-size: 2.2rem; 
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
 }
 
 section a:link, section a:visited {
@@ -37,25 +70,44 @@ section a:hover, section a:focus {
     color: steelblue;
 }
 
+aside {
+    flex: 1;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
 aside h2 {
     color: maroon;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 aside ul {
+    list-style-type: none;
+    padding-left: 0;
     line-height: 1.5;
+}
+
+aside li {
+    margin-bottom: 8px;
 }
 
 aside a:link, aside a:visited {
     color: steelblue;
+    text-decoration: none;
 }
 
 aside a:hover, aside a:focus {
     color: maroon;
+    text-decoration: underline;
 }
 
 footer {
     clear: both;
-    font-size: 0.85rem;
+    background-color: steelblue;
+    color: white;
     text-align: center;
-    padding-top: 20px;
+    font-size: 0.85rem;
+    padding: 15px;
 }
